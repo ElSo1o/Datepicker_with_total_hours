@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/overcast/jquery-ui.css">
+    </head>
+    <body>
+    <div class="content">
+        <div class="main">
+            <header class="page-header">
+                <div class="modal-title">
+                    <h1>Personal reporting</h1>
+                </div>
+            </header>
+            <section class="" id="input_header">
+                <div class="flex_item">
+                    <div class="btn-group item_header">
+                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button>
+                        <button type="button" class="btn btn-default" disabled="disabled" ><span class="glyphicon glyphicon-chevron-right"></span></button>
+                    </div>
+                    <div class="form-group calendar_input item_header">
+                        <div class="input-group " id="DateDemo">
+                            <input type='text' class="form-control" id='weeklyDatePicker' placeholder="Select Week"/>
+                            <!--<div class="datepicker"></div>-->
+                            <span class="input-group-addon">
+                                <div class="icon_arrows">
+                                    <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item_header" data-toggle="buttons">
+                        <label class="btn btn-default">
+                            <input type="checkbox" id="check_assigm" autocomplete="off">
+                            <span class="glyphicon glyphicon-ok check_icon"></span>
+                        </label>
+                        <span>All Assignments</span>
+                    </div>
+                </div>
+            </section>
+            <section class="table_hour">
+                <table class="table" id="hours_table">
+                    <thead class="table-header darken-3">
+                    <tr class="panel panel-default">
+                        <th class="panel-heading">Project Name</th>
+                        <th class="header_width panel-heading">Mon</th>
+                        <th class="header_width panel-heading">Tue</th>
+                        <th class="header_width panel-heading">Wed</th>
+                        <th class="header_width panel-heading">Thu</th>
+                        <th class="header_width panel-heading">Fri</th>
+                        <th class="fix_width panel-heading">Sat</th>
+                        <th class="fix_width panel-heading">Sun</th>
+                        <th class="header_width panel-heading">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Project name A (Not assigned)</th>
+                            <td>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control  name_A_mon"  value="0" align="bottom" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        <td>
+                            <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_A_tue"  value="0" data-toggle="tooltip" data-trigger="manual" data-placement="top" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_A_wed" value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_A_thu" value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_A_fri" value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div>
+                        </td>
+                        <td class="color_item">
+                            <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_A_sat" value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div>
+                        </td>
+                        <td class="color_item">
+                            <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_A_sun" value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>0</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Project name B (Not assigned)</th>
+                        <td>
+                            <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_B_mon"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_B_tue"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_B_wed"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_B_thu"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_B_fri"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div>
+                        </td>
+                        <td class="color_item">
+                            <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_B_sat"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div>
+                        </td>
+                        <td class="color_item">
+                            <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_B_sun"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p>0</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Project name C (Not assigned)</th>
+                        <td><div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_C_mon"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div></td>
+                        <td><div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_C_tue"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div></td>
+                        <td><div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_C_wed"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div></td>
+                        <td><div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_C_thu"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div></td>
+                        <td><div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_C_fri"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div></td>
+                        <td class="color_item"><div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_C_sat"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div></td>
+                        <td class="color_item"><div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_C_sun"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div></td>
+                        <td>
+                            <p>0</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Project name D (Not assigned)</th>
+                        <td><div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_D_mon"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div></td>
+                        <td><div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_D_tue"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div></td>
+                        <td><div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_D_wed"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div></td>
+                        <td><div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_D_thu"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div></td>
+                        <td><div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_D_fri"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div></td>
+                        <td class="color_item"><div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_D_sat"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div></td>
+                        <td class="color_item"><div class="container-fluid">
+                                    <div class="row">
+                                        <div class="form-group col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+                                            <input type="text" class="form-control name_D_sun"  value="0" data-toggle="tooltip" data-trigger="manual" data-original-title="hours not more than twelve">
+                                        </div>
+                                    </div>
+                            </div></td>
+                        <td>
+                            <p>0</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><i class="glyphicon glyphicon-triangle-right"></i><span>Project name E (Not assigned)</span></th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td class="color_item">0</td>
+                        <td class="color_item">0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Total</th>
+                        <td class="white_total">0</td>
+                        <td class="white_total">0</td>
+                        <td class="white_total">0</td>
+                        <td class="white_total">0</td>
+                        <td class="white_total">0</td>
+                        <td class="white_total">0</td>
+                        <td class="white_total">0</td>
+                        <td class="white_total">0</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="button_add">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="add_prj_btn btg_group_1 col-md-1 ">
+                            <button class="btn btn-primary">Add Project</button>
+                        </div>
+                        <div class="btg_group_2">
+                            <div class="info_btn_confirm info_block">
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="info_btn_confirm">
+                                <button class="btn btn-primary">Confirm as of EOD</button>
+                            </div>
+                            <div class="info_btn_confirm">
+                                <button class="btn btn-primary">Report as for previous week</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,229 @@
+html  body .content  .main{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.content{
+    padding: 50px 25px 50px 25px;
+    background: #f5f5f5;
+}
+.main{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 0 10px 0;
+    border: 1px solid #ddd;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main > .page-header{
+    margin: 15px 0 15px 0;
+}
+.page-header h1{
+    font-weight: 900;
+    letter-spacing: 0.2px;
+    padding: 0 20px;
+    font-size: 24px;
+    margin-top: 0;
+}
+.flex_item{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /*margin: 20px 0 35px 0;*/
+}
+.item_header{
+    margin-left: 15px;
+}
+.flex_item > div:last-child label{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-right: 10px;
+    font-size: 9px;
+    padding: 4px 6px;
+}
+#DateDemo > input{
+     margin-bottom: 0;
+}
+.flex_item div:nth-child(2){
+    margin-bottom: 0;
+}
+#input_header{
+    margin: 0 0 15px 5px;
+}
+.flex_item >.item_header  button {
+    border-radius: 2px;
+    background-color: #eee;
+    height: 38px;
+}
+.flex_item > .item_header button span{
+    color: #9d9d9d;
+}
+.flex_item th{
+     font-weight: 600;
+    color: #333333;
+}
+.flex_item tr{
+    color: #333333;
+}
+.item_header > span {
+    font-size: 14px;
+    font-weight: 600;
+}
+.btn span.check_icon {
+    opacity: 0;
+}
+.btn.active span.check_icon {
+    opacity: 1;
+}
+.table_hour{
+    margin: 0 20px;
+}
+table{
+    border-bottom: 1px solid #ddd;
+}
+.all_assigm_chbx > .btn-group > span{
+    font-size: x-large;
+    font-weight: bolder;
+}
+body .content > .main > section >.table > .table-header > tr > th{
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    font-size: 12px;
+    color: inherit;
+}
+.table > .table-header > tr > th{
+    text-align: center;
+}
+body .content > .main > section >.table > .table-header > tr > th:first-child{
+    text-align: left;
+}
+section >.table > tbody > tr > th{
+    font-weight: 600;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    vertical-align: middle;
+    font-size: 12px;
+    padding-left: 15px;
+}
+.table_hour tbody > tr > td{
+    text-align: center;
+    background-color: rgba(255, 52, 66,0.14);
+    border-right: 1px solid #ddd;
+    font-size: 12px;
+}
+section > .table > tbody > tr > td{
+    vertical-align: middle;
+}
+.table > tbody > tr > .color_item{
+    background-color: rgba(122, 184, 255, 0.2);
+    /*width: 3.333333%;*/
+}
+.table tbody > tr > .white_total{
+    background-color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+tbody > tr td:last-child{
+    background-color: white;
+}
+tbody > tr td:last-child > p{
+    margin: 14px 0 14px 0;
+}
+td .form-group {
+    margin-bottom: 0;
+}
+th > i{
+    font-size: 7px;
+}
+.header_width{
+    width: 11%;
+}
+.fix_width{
+    width: 5.333333%;
+}
+.form-group > input{
+    text-align: center;
+    font-size: 12px;
+    height: 36px;
+    padding: 6px 3px;
+}
+.info_btn_confirm{
+    margin: 0 15px;
+}
+.info_btn_confirm > i {
+    font-size: 30px;
+    color: rgba(60,60,60,0.5);
+}
+.info_btn_confirm > i:hover {
+    color: rgba(60,60,60,0.8);
+}
+.ui-datepicker-calendar tbody > tr > td > .ui-state-default{
+    color: #555555;
+}
+#weeklyDatePicker{
+    background-color: #eee;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 2px;
+    height: 38px;
+}
+.icon_arrows{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+.button_add button{
+    padding: 8px 24px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 2px;
+}
+.calendar_input{
+    max-width: 318px;
+}
+.btg_group_2{
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+ }
+ .table_hour tbody tr:nth-child(5) > th{
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     align-items: center;
+ }
+.btg_group_2 div:first-child{
+    margin-right: 0;
+}
+.button_add{
+     margin-bottom: 20px;
+ }
+.button_add .container-fluid{
+     padding-right: 20px;
+     padding-left: 20px;
+ }
+#ui-datepicker-div{
+    font-family: 'Open Sans', sans-serif;
+    background:white;
+    background-image: none;
+}
+.ui-datepicker-calendar tbody > tr > td > .ui-state-active{
+    background: rgba(122, 184, 255, 0.5);
+}
+
+
