@@ -1,6 +1,39 @@
 html  body .content  .main{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'jaf-domus';
+}
+@font-face {
+    font-family: jaf-domus;
+    font-weight: 200;
+    src: url("../css/fonts/Domus Extralight.otf") format("opentype");
+}
+@font-face {
+    font-family: jaf-domus;
     font-weight: 300;
+    src: url("../css/fonts/Domus Light.otf") format("opentype");
+}
+@font-face {
+    font-family: jaf-domus;
+    font-weight: 600;
+    src: url("../css/fonts/Domus Semibold.otf") format("opentype");
+}
+@font-face {
+    font-family: jaf-domus;
+    font-weight: 400;
+    src: url("../css/fonts/Domus Ultralight.otf") format("opentype");
+}
+@font-face {
+    font-family: jaf-domus;
+    src: url("../css/fonts/Domus.otf") format("opentype");
+}
+@font-face {
+    font-family: jaf-domus;
+    font-weight: bold;
+    src: url("../css/fonts/Domus_Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: jaf-domus;
+    font-weight: 900;
+    src: url("../css/fonts/Domus Extrabold.otf") format("opentype");
 }
 .content{
     padding: 50px 25px 50px 25px;
