@@ -54,7 +54,7 @@ html  body .content  .main{
     font-weight: 900;
     letter-spacing: 0.2px;
     padding: 0 20px;
-    font-size: 24px;
+    font-size: 26px;
     margin-top: 0;
 }
 .flex_item{
@@ -103,7 +103,7 @@ html  body .content  .main{
     color: #333333;
 }
 .item_header > span {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
 }
 .btn span.check_icon {
@@ -125,7 +125,7 @@ table{
 body .content > .main > section >.table > .table-header > tr > th{
     padding: 15px;
     border-right: 1px solid #ddd;
-    font-size: 12px;
+    font-size: 14px;
     color: inherit;
 }
 .table > .table-header > tr > th{
@@ -139,14 +139,14 @@ section >.table > tbody > tr > th{
     border-right: 1px solid #ddd;
     border-left: 1px solid #ddd;
     vertical-align: middle;
-    font-size: 12px;
+    font-size: 14px;
     padding-left: 15px;
 }
 .table_hour tbody > tr > td{
     text-align: center;
     background-color: rgba(255, 52, 66,0.14);
     border-right: 1px solid #ddd;
-    font-size: 12px;
+    font-size: 14px;
 }
 section > .table > tbody > tr > td{
     vertical-align: middle;
@@ -180,7 +180,7 @@ th > i{
 }
 .form-group > input{
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     height: 36px;
     padding: 6px 3px;
 }
@@ -199,7 +199,7 @@ th > i{
 }
 #weeklyDatePicker{
     background-color: #eee;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     padding: 10px;
     border-radius: 2px;
@@ -217,7 +217,7 @@ th > i{
 .button_add button{
     padding: 8px 24px;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
     border-radius: 2px;
 }
 .calendar_input{
